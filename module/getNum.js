@@ -1,0 +1,1 @@
+"use strict";define(["jquery"],function(){$.fn.extend({getNum:function(){var e=$.cookie("cart"),o=JSON.parse(e).length,n=0;console.log(o);for(var c=1;c<o+1;c++)$(".oneChk").eq(c).prop("checked")&&n++;console.log(n),$("#number").html(n+"件")}})});

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="/css/list.css"/>
+	</head>
+	<body>
+		<header></header>
+		<div class="all-list">
+			<p class="fenlei"><a href="">首页</a> > <a href="">大厨美食</a></p>
+			<ul class="meishi">
+				<li>大厨美食</li>
+				<li><a href="" class="list-a">沙拉</a><span>></span></li>
+				<li><a href="" class="list-a">蛋糕和甜点</a><span>></span></li>
+				<li><a href="" class="list-a">大厨力荐</a><span>></span></li>
+				<li><a href="" class="list-a">汤</a><span>></span></li>
+				<li><a href="" class="list-a">奶酪/芝士</a><span>></span></li>
+				<li><a href="" class="list-a">面包和主食</a><span>></span></li>
+				<li><a href="" class="list-a">开胃小食</a><span>></span></li>
+				<li><a href="" class="list-a">酱料</a><span>></span></li>
+				<li><a href="" class="list-a">更多</a><span>></span></li>
+			</ul>
+			<div class="goods">
+				<ul class="paixu">
+					<li><b>排序</b></li>
+					<li><a href="">综合</a></li>
+					<li><a href="">价格从低到高</a></li>
+					<li><a href="">价格从高到低</a></li>
+					<li><a href="">促销力度从高到低</a></li>
+				</ul>
+				<ul class="goods-detail" id="container">
+					
+					<script type="text/html" id="temp">
+						{{each product item i}}
+					<li id="{{item.id}}">	
+						<a href="javascript:;"><img src="{{item.img}}" class="addPic"></a>
+						<a href="javascript:;" class="itemname">{{item.name}}</a>
+						<p>{{item.discrpt}}</p>
+						<h6>{{item.zhongliang}}</h6>
+						<h6>上海</h6>
+						<h4 class="price">￥{{item.newprice}}<span>￥{{item.oldprice}}</span></h4>
+						<img src="/images/icon-cart.png"/ class="add">
+						
+					</li>
+					{{/each}}
+					</script>
+					<!--<li><a href=""><img src="/images/goods1.JPG"/ class="addPic"></a>
+						<a href="">三文鱼奶油芝士乳蛋饼-嘉席餐厅</a>
+						<p>奶味香浓，绵延口中</p>
+						<h6>80克</h6>
+						<h6>上海</h6>
+						<h4>￥18<span>￥23</span></h4>
+						<img src="/images/icon-cart.png"/ class="add">
+					</li>-->
+					
+				</ul>
+			</div>
+		</div>
+		<footer></footer>
+		<script src="/libs/require/require.js" data-main="/js/list.js"</script>
+	</body>
+</html>

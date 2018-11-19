@@ -1,0 +1,1 @@
+"use strict";define(["jquery"],function(i){i.fn.extend({onePrc:function(){for(var e=JSON.parse(i.cookie("cart")),n=i(this).parents(".one").attr("id"),r=0;r<e.length;r++)if(e[r].no==n){var t=parseInt(e[r].num)*parseInt(e[r].price);break}i(this).parents(".one").find(".allprice").html("￥"+t)}})});

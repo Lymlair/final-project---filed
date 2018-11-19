@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="/css/cart.css"/>
+	</head>
+	<body>
+		<header></header>
+		<div class="liucheng">
+			<ul>
+				<li><span>1</span><br/><i class="zero">购物车</i></li>
+				<li><span>2</span><br/><i>结算中心</i></li>
+				<li><span>3</span><br/><i>下单成功</i></li>
+			</ul>
+		</div>
+		<div class="cartitem">
+			<a href=""><img src="/images/cartitem.jpg"/></a>
+		</div>
+		<div class="nonitem">
+			<img src="/images/none-cart.png"/>
+			<p>购物车内为空，登录后将显示您之前加入的商品</p>
+			<a href="/html/list.html">去逛逛</a>
+		</div>
+		<div class="cart">
+			<p class="title">购物车</p>
+			<div class="project">
+				<input type="checkbox" id="allChk"/><h6>全选</h6>
+				<h6>名称</h6>
+				<h6>规格</h6>
+				<h6>单价</h6>
+				<h6>数量</h6>
+				<h6>总计</h6>
+			</div>
+			<p class="nonqksell">非促销商品</p>
+			<div class="one" id="none">
+				<input type="checkbox" class="oneChk"/>
+				<img src="/images/goods1.JPG"/>
+				<h6 class="item-name">速冻海胆肉</h6>
+				<h6>1盒（约100克）</h6>
+				<h6 class="price">￥105</h6>
+				<div class="add-reduce">
+					<span>-</span>
+					<span class="itemNum">1</span>
+					<span>+</span>
+				</div>
+				<h6 class="allprice">￥105</h6>
+			</div>
+			
+			<div class="all-check">
+				<input type="checkbox" id="allChkk"/>
+				<h6>全选</h6>
+				<h6 id="number">0件</h6>
+				<p id="del">删除选中的商品</p>
+			</div>
+		</div>
+		<div class="settle">
+			<p>下单即可获得免费礼品。<a href="">选择免费礼品</a></p>
+			
+			<div class="get">
+				<dl>
+					<dt>商品总额</dt>
+					<dd id="goodsPrice"></dd>
+				</dl>
+				<span>+</span>
+				<dl>
+					<dt>运费金额</dt>
+					<dd id="yunfei"></dd>
+				</dl>
+				<span>=</span>
+				<dl>
+					<dt>应付总额</dt>
+					<dd id="payPrice"></dd>
+				</dl>
+				<button>结算</button>
+			</div>
+		</div>
+		<footer></footer>
+		<script src="/libs/require/require.js" data-main = "/js/cart.js" charset="utf-8"></script>
+	</body>
+</html>
